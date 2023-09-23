@@ -1,0 +1,47 @@
+.nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%; /* position 주면 깨짐 이걸로 부모의 너비를 다 받음*/
+	box-sizing: border-box;
+	background-color: #f9f9fa;
+	padding: 20px 50px;
+	border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__link {
+	position: relative;
+	color: #2e363e;
+}
+
+.nav_notification {
+	background-color: tomato;
+	width: 30px; /*inline일 경우 적용 안되는데 flex 때문에 block특징도 갖게 되서 적용 됨*/
+	height: 30px;
+	border-radius: 15px;
+	display: flex; /* 텍스트 1이 block으로 바뀜 */
+	justify-content: center; /* 텍스트 1을 정렬*/
+	align-items: center;
+	color: white;
+	font-weight: 600;
+	position: absolute; /*메세지 아이콘이랑 같은 위치에 적용, absolute가 적용된 .nav__notification의 기본위치가
+	.nav__link 이기 때문이고 같은 위치에 적용되어있는 아이콘의 위에 덮어씌워짐*/
+	left: 15px;
+	bottom: 15px;
+}
+
+.nav_menu-notification {
+	background-color: tomato;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 30px;
+}

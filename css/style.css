@@ -9,15 +9,23 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
+@import "components/notification.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/firends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 body {
 	color: #2e363e;
 	font-family: "Open Sans", sans-serif;
-	height: 1000vh;
+	padding-top: 30px;
 }
 
 .main-screen {

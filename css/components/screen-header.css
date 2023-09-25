@@ -3,7 +3,6 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: var(--horizontal-space);
-	padding-top: 40px;
 	margin-bottom: 15px;
 }
 
@@ -13,4 +12,27 @@
 }
 .screen-header__icons span {
 	margin-left: 25px;
+}
+
+.screen-header__icons > span:last-child {
+	position: relative;
+}
+
+.screen-header__notification {
+	position: absolute;
+	top: -3px;
+	left: -3px;
+}
+
+@keyframes rotateCog {
+	from {
+		transform: none;
+	}
+	to {
+		transform: rotatez(360deg);
+	}
+}
+
+.screen-header__icons .fa-gear:hover {
+	animation: rotateCog 2s linear infinite;
 }

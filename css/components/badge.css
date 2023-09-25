@@ -1,0 +1,11 @@
+.badge{
+    background-color: tomato;
+	width: 30px; /*inline일 경우 적용 안되는데 flex 때문에 block특징도 갖게 되서 적용 됨*/
+	height: 30px;
+	border-radius: 15px;
+	display: flex; /* 텍스트 1이 block으로 바뀜 */
+	justify-content: center; /* 텍스트 1을 정렬*/
+	align-items: center;
+	color: white;
+	font-weight: 600;
+}
